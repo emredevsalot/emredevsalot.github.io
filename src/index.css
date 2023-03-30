@@ -1,10 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Prompt:wght@700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
-body {
+body,
+#root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+
+  /* Variables */
+  --primary-font: "Prompt", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+  --primary-color: #d6ed17;
+  --secondary-color: #131117;
+  --light-color: #f3f3f3;
+
+  font-family: var(--secondary-font);
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+}
+
+h1 {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 4.5rem;
 }
