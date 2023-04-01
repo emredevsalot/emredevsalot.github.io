@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Variables */
+  --primary-font: "Prompt", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+  --primary-color: #d6ed17;
+  --secondary-color: #131117;
+  --light-color: #f3f3f3;
+}
+
 html,
 body,
 #root {
@@ -12,13 +21,6 @@ body,
   box-sizing: border-box;
   overflow-x: hidden;
 
-  /* Variables */
-  --primary-font: "Prompt", sans-serif;
-  --secondary-font: "Lato", sans-serif;
-  --primary-color: #d6ed17;
-  --secondary-color: #131117;
-  --light-color: #f3f3f3;
-
   font-family: var(--secondary-font);
   background-color: var(--secondary-color);
   color: var(--light-color);
@@ -26,18 +28,50 @@ body,
 
 h1 {
   font-family: var(--primary-font);
-  /* color: var(--primary-color); */
-  font-size: 4.5rem;
+  font-size: clamp(2rem, 5vw, 6rem);
 }
 
-.noise {
+.hero-image {
+  filter: grayscale(100%) brightness(85%) contrast(110%);
+  -webkit-filter: grayscale(100%) brightness(85%) contrast(110%); /* Safari 6.0 - 9.0 */
+}
+
+/* Project Card */
+
+.project-card-focus-image {
+  transition: all 500ms ease-in-out;
+  pointer-events: none;
+}
+.project-card-bg-image {
+  transition: all 500ms ease-in-out;
+}
+
+.project-card:hover .project-card-focus-image {
+  transform: translateY(-50%) rotate(5deg) scale(130%);
+}
+
+.project-card:hover .project-card-bg-image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+
+/* Misc */
+
+.noise-bg {
   background: var(--secondary-color);
   background-image: url(/noise.png);
   background-blend-mode: overlay;
   /* background-blend-mode: soft-light; */
 }
 
-.hero-image {
-  filter: grayscale(100%) brightness(85%) contrast(110%);
-  -webkit-filter: grayscale(100%) brightness(85%) contrast(110%); /* Safari 6.0 - 9.0 */
+.outline-3 {
+  filter: drop-shadow(3px 0 0 var(--primary-color))
+    drop-shadow(0 3px 0 var(--primary-color))
+    drop-shadow(-3px 0 0 var(--primary-color))
+    drop-shadow(0 -3px 0 var(--primary-color));
+
+  -webkit-filter: drop-shadow(3px 0 0 var(--primary-color))
+    drop-shadow(0 3px 0 var(--primary-color))
+    drop-shadow(-3px 0 0 var(--primary-color))
+    drop-shadow(0 -3px 0 var(--primary-color));
 }
