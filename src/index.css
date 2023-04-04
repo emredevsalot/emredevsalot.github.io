@@ -38,21 +38,35 @@ h1 {
 
 /* Project Card */
 
-.project-card-focus-image {
+.project-card,
+.project-card * {
   transition: all 500ms ease-in-out;
+}
+
+.project-card-focus-image {
   pointer-events: none;
 }
-.project-card-bg-image {
-  transition: all 500ms ease-in-out;
+
+.project-card-link {
+  display: inline-block;
+  transform: translateX(-20%);
+  opacity: 0;
+}
+
+.project-card:hover:nth-child(odd) {
+  transform: rotate(-0.5deg) scale(103%);
+}
+.project-card:hover:nth-child(even) {
+  transform: rotate(0.5deg) scale(103%);
 }
 
 .project-card:hover .project-card-focus-image {
   transform: translateY(-50%) rotate(5deg) scale(130%);
 }
 
-.project-card:hover .project-card-bg-image {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+.project-card:hover .project-card-link {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 /* Misc */
