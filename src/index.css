@@ -39,7 +39,7 @@ h1 {
 /* Project Card */
 
 .project-card,
-.project-card * {
+.project-card-focus-image {
   transition: all 500ms ease-in-out;
 }
 
@@ -51,6 +51,7 @@ h1 {
   display: inline-block;
   transform: translateX(-20%);
   opacity: 0;
+  transition: all 350ms ease-in-out;
 }
 
 .project-card:hover:nth-child(odd) {

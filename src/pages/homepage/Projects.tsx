@@ -9,7 +9,7 @@ const Projects = (props: Props) => {
         // Project Card Component
         <div
           key={index}
-          className="project-card cursor-pointer border-4 border-primary opacity-[99%]"
+          className="project-card h-min border-4 border-primary opacity-[99%]"
         >
           {/* Project Card Image */}
           <div className="relative border-b-4 border-primary">
@@ -62,11 +62,25 @@ const Projects = (props: Props) => {
               ))}
             </div>
           </div>
-          <div className="border-t-4 border-primary px-5 py-2  text-primary">
-            <div className="inline-flex">
+          <div className="flex justify-evenly border-t-4 border-primary px-5 py-2  text-primary">
+            <a
+              className="inline-flex hover:text-secondary-50"
+              href={item.githubUrl}
+              target="_blank"
+            >
               <p className="pr-1">{"GITHUB"}</p>
-              <p className="project-card-link">{"> > > > > > > > >"}</p>
-            </div>
+              <p className="project-card-link">{"> > > >"}</p>
+            </a>
+            {item.liveSiteUrl !== "" && (
+              <a
+                className="inline-flex hover:text-secondary-50"
+                href={item.liveSiteUrl}
+                target="_blank"
+              >
+                <p className="pr-1">{"LIVE SITE"}</p>
+                <p className="project-card-link">{"> > > >"}</p>
+              </a>
+            )}
           </div>
           {/* Smoother animation values */}
         </div>
