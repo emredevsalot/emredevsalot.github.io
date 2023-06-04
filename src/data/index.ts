@@ -13,8 +13,8 @@ export const projects: Array<ProjectType> = [
     title: "Unusual Buildings",
     description:
       "Welcome to the world of unusual buildings! Step into a captivating journey through a collection of the most remarkable and unconventional buildings from around the globe.",
-    backgroundImageUrl: "/project-example.png",
-    focusImageUrl: "/project-example-top.png",
+    backgroundImageUrl: "/unusual-buildings.png",
+    focusImageUrl: "/unusual-buildings-top.png",
     liveSiteUrl: "https://emredevsalot.github.io/unusual-buildings/",
     githubUrl: "https://github.com/emredevsalot/unusual-buildings",
     usedTech: [
