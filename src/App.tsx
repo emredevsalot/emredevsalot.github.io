@@ -5,7 +5,7 @@ import Homepage from "./pages/homepage";
 function App() {
   return (
     <BrowserRouter>
-      <div className="noise-bg px-[clamp(1rem,10vw,36rem)]">
+      <div className="noise-bg min-h-screen px-[clamp(1rem,10vw,36rem)]">
         {/* <div>navbar</div> */}
         <Routes>
           <Route path="/" element={<Homepage />} />

@@ -6,7 +6,7 @@ type Props = {};
 
 const Homepage = (props: Props) => {
   return (
-    <>
+    <div className="container mx-auto">
       <section
         className={`flex flex-col items-center gap-8 py-[clamp(3rem,6vw,5rem)] md:flex-row`}
       >
@@ -17,7 +17,7 @@ const Homepage = (props: Props) => {
       >
         <Projects />
       </section>
-    </>
+    </div>
   );
 };
 
