@@ -62,7 +62,7 @@ h1 {
 }
 
 .project-card:hover .project-card-focus-image {
-  transform: translateY(-50%) rotate(5deg) scale(130%);
+  transform: translateY(-35%) translateX(-15%) rotate(-5deg) scale(150%);
 }
 
 .project-card:hover .project-card-link {
