@@ -12,7 +12,7 @@ export const projects: Array<ProjectType> = [
   {
     title: "Unusual Buildings",
     description:
-      "Welcome to the world of unusual buildings! Step into a captivating journey through a collection of the most remarkable and unconventional buildings from around the globe.",
+      "Unusual Buildings is a showcase of extraordinary and unique architectural wonders from around the world. I wanted to show my skills in creating a multi-page application with smooth animations.",
     backgroundImageUrl: "/unusual-buildings.png",
     focusImageUrl: "/unusual-buildings-top.png",
     liveSiteUrl: "https://emredevsalot.github.io/unusual-buildings/",
@@ -28,7 +28,7 @@ export const projects: Array<ProjectType> = [
   {
     title: "Scene Struggle",
     description:
-      "Welcome to Scene Struggle! Fun games about your favorite Youtube channel to see if you're a real fan.",
+      "Scene Struggle allows users to play mini-games based on their favorite YouTube channels. Allowed me to explore the YouTube API and integrate it into a web application.",
     backgroundImageUrl: "/project-example.png",
     focusImageUrl: "/project-example-top.png",
     liveSiteUrl: "https://emredevsalot.github.io/scene-struggle/",
@@ -44,7 +44,7 @@ export const projects: Array<ProjectType> = [
   {
     title: "Gigachad Maker",
     description:
-      "Gigachad Maker helps you create a 'Gigachad Meme' gif by using the Remotion library for React framework.",
+      "Gigachad Maker allows you to create a 'Gigachad Meme' GIF by leveraging the power of the Remotion framework for React.",
     backgroundImageUrl: "/project-example.png",
     focusImageUrl: "/project-example-top.png",
     liveSiteUrl: "",
