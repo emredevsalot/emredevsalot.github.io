@@ -14,18 +14,18 @@ const Projects = (props: Props) => {
           {/* Project Card Image */}
           <div className="relative border-b-4 border-primary">
             <img
-              className="project-card-bg-image h-48 w-full object-cover"
+              className="project-card-bg-image w-full object-cover"
               src={item.backgroundImageUrl}
             />
             {/* Project Card Image - Focus - Front */}
             <img
               src={item.focusImageUrl}
-              className="project-card-focus-image absolute inset-0 z-10 m-auto h-48 "
+              className="project-card-focus-image absolute inset-0 z-10 m-auto"
             />
             {/* Project Card Image - Focus - Behind */}
             <img
               src={item.focusImageUrl}
-              className="project-card-focus-image outline-3 absolute inset-0 -z-10 m-auto h-48 "
+              className="project-card-focus-image outline-3 absolute inset-0 -z-10 m-auto"
             />
           </div>
 
