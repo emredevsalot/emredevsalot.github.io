@@ -10,7 +10,8 @@ const Hero = (props: Props) => {
           <br />i build <span className="text-primary">things.</span>
         </h1>
         <p className="mt-4 text-center">
-          Graphic designah, UI/UX designah & front-end web developah
+          Frontend developer who likes to develop fun little projects with
+          various libraries in order to deepen my knowledge in the field.
         </p>
       </div>
       {/* Hero image ---------------------------------------------- */}
