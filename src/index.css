@@ -31,6 +31,11 @@ h1 {
   font-size: clamp(2rem, 5vw, 6rem);
 }
 
+h2 {
+  font-family: var(--primary-font);
+  font-size: clamp(1.3rem, 4vw, 4.5rem);
+}
+
 .hero-image {
   filter: grayscale(100%) brightness(85%) contrast(110%);
   -webkit-filter: grayscale(100%) brightness(85%) contrast(110%); /* Safari 6.0 - 9.0 */
