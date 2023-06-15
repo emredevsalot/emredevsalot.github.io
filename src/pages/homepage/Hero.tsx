@@ -6,7 +6,7 @@ const Hero = (props: Props) => {
   return (
     <>
       <section
-        className={`flex flex-col items-center gap-8 py-[clamp(3rem,6vw,5rem)] md:flex-row`}
+        className={`flex min-h-screen flex-col items-center gap-8 py-[clamp(3rem,6vw,5rem)] md:flex-row`}
       >
         {/* Hero text ---------------------------------------------- */}
         <div className="flex w-full flex-col items-center justify-center md:w-1/2">
