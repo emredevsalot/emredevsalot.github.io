@@ -1,3 +1,5 @@
+import Button from "../../components/Button";
+
 type Props = {};
 
 const Hero = (props: Props) => {
@@ -9,10 +11,13 @@ const Hero = (props: Props) => {
           hey, i'm <span className="text-primary">emre</span>
           <br />i build <span className="text-primary">things.</span>
         </h1>
-        <p className="mt-4 text-center">
+        <p className="mb-12 mt-4 text-center">
           Frontend developer who likes to develop fun little projects with
           various libraries in order to deepen my knowledge in the field.
         </p>
+        <a href="/Emre_Ergul_Resume.pdf" target="_blank">
+          <Button children="My Resume" />
+        </a>
       </div>
       {/* Hero image ---------------------------------------------- */}
       <div className="flex w-full items-center justify-center md:w-1/2">
