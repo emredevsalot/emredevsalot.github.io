@@ -42,7 +42,9 @@ const Projects = (props: Props) => {
           p-5"
             >
               <div className="font-primary text-3xl">{item.title}</div>
-              <div className="text-gray-400">{item.description}</div>
+              <div className=" text-gray-400">
+                <p>{item.description}</p>
+              </div>
               <div className="flex flex-wrap gap-2">
                 {item.usedTech.map((tech) => (
                   <span
@@ -51,7 +53,7 @@ const Projects = (props: Props) => {
                 items-center
                 bg-primary
                 px-2.5
-                py-1
+                py-0.5
                 font-primary
                 text-xs
                 uppercase
