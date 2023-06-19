@@ -18,9 +18,14 @@ const Hero = (props: Props) => {
             Frontend developer who likes to develop fun little projects with
             various libraries in order to deepen my knowledge in the field.
           </p>
-          <a href="/Emre_Ergul_Resume.pdf" target="_blank">
-            <Button children="My Resume" />
-          </a>
+          <div className="grid grid-flow-col gap-4">
+            <a href="https://github.com/emredevsalot" target="_blank">
+              <Button children="My Github" />
+            </a>
+            <a href="/Emre_Ergul_Resume.pdf" target="_blank">
+              <Button children="My Resume" />
+            </a>
+          </div>
         </div>
         {/* Hero image ---------------------------------------------- */}
         <div className="flex w-full items-center justify-center md:w-1/2">
