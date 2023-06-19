@@ -11,10 +11,10 @@ const Hero = (props: Props) => {
         {/* Hero text ---------------------------------------------- */}
         <div className="flex w-full flex-col items-center justify-center md:w-1/2">
           <h1 className="text-center">
-            hey, i'm <span className="text-primary">emre</span>
+            hey, i'm <span className="text-primary">emre.</span>
             <br />i build <span className="text-primary">things.</span>
           </h1>
-          <p className="mb-12 mt-4 text-center">
+          <p className="mb-12 mt-4 px-16 text-center">
             Frontend developer who likes to develop fun little projects with
             various libraries in order to deepen my knowledge in the field.
           </p>

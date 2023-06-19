@@ -18,7 +18,7 @@ const Projects = (props: Props) => {
             {/* Project Card Image */}
             <div className="relative border-b-4 border-primary">
               <img
-                className="project-card-bg-image w-full object-cover"
+                className="w-full object-cover"
                 src={item.backgroundImageUrl}
               />
               {/* Project Card Image - Focus - Front */}
