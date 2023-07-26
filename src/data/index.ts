@@ -10,6 +10,16 @@ export interface ProjectType {
 
 export const projects: Array<ProjectType> = [
   {
+    title: "Prompt Filler",
+    description:
+      "Prompt Filler is a user-friendly app that simplifies the process of generating and completing prompts for ChatGPT, saving you time and effort in crafting engaging and effective prompts for various purposes.",
+    backgroundImageUrl: "/prompt-filler.png",
+    focusImageUrl: "/prompt-filler-top.png",
+    liveSiteUrl: "https://emredevsalot.github.io/prompt-filler/",
+    githubUrl: "https://github.com/emredevsalot/prompt-filler",
+    usedTech: ["NextJS", "Typescript", "Tailwind", "React-Hook-Form"],
+  },
+  {
     title: "Unusual Buildings",
     description:
       "Unusual Buildings is a showcase of extraordinary and unique architectural wonders from around the world. I wanted to show my skills in creating a multi-page application with smooth animations.",
