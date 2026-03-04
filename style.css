@@ -1,20 +1,13 @@
 :root {
     /* Dark Mode Palette */
     --bg: #0a0a0a;
-    /* Deep black background */
     --text: #f0f0f0;
-    /* Off-white for high readability */
     --accent: #ff5e00;
-    /* Vibrant orange for key stats/links */
     --dim: #888888;
-    /* Gray for secondary information */
-    --font-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
     --border: #2a2a2a;
-    /* Subtle dark borders */
     --tag-bg: #1a1a1a;
-    /* Darker background for tags */
     --hover-bg: #141414;
-    /* Slight lift on hover */
+    --font-mono: 'SFMono-Regular', Consolas, Menlo, monospace;
 }
 
 * {
@@ -27,16 +20,19 @@ body {
     font-family: var(--font-mono);
     background-color: var(--bg);
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.6;
     padding: 4rem 2rem;
-    max-width: 700px;
+    max-width: 720px;
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
 }
 
+/* ============================= */
 /* Header */
+/* ============================= */
+
 header {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 h1 {
@@ -46,26 +42,56 @@ h1 {
     color: #ffffff;
 }
 
+.title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
 .location {
     font-size: 0.8rem;
     color: var(--dim);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
 }
 
-.bio {
-    font-size: 1rem;
-    max-width: 550px;
-    margin-bottom: 1rem;
-    color: #d1d1d1;
+.contact {
+    font-size: 0.8rem;
+    margin: 1rem 0 1.2rem 0;
+    padding: 0.6rem 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.contact a {
+    color: var(--dim);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact a:hover {
+    color: var(--text);
+    border-bottom: 1px solid var(--accent);
 }
 
 .stats {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--accent);
+    margin-bottom: 1rem;
+    letter-spacing: 0.02em;
 }
 
-/* Sectioning */
+.bio {
+    font-size: 0.95rem;
+    max-width: 560px;
+    color: #d1d1d1;
+}
+
+/* ============================= */
+/* Sections */
+/* ============================= */
+
 section {
     margin-bottom: 3.5rem;
 }
@@ -76,13 +102,15 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border);
     border-top: 1px solid var(--border);
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0;
 }
 
+/* ============================= */
 /* Project Styling */
+/* ============================= */
+
 .project-group {
     margin-bottom: 1rem;
     padding: 4px 0;
@@ -101,6 +129,7 @@ h2 {
     text-decoration: none;
     color: inherit;
     padding: 0.5rem 0;
+    transition: color 0.2s ease;
 }
 
 .project-item:hover {
@@ -136,7 +165,10 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
+/* ============================= */
 /* Stack Section */
+/* ============================= */
+
 .stack-list {
     font-size: 0.9rem;
     color: #cccccc;
@@ -150,31 +182,21 @@ h2 {
     margin-right: 5px;
 }
 
+/* ============================= */
 /* Footer */
+/* ============================= */
+
 footer {
     border-top: 1px solid var(--border);
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     margin-top: 4rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-footer a {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: var(--dim);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
 }
 
-footer a:hover {
-    color: var(--text);
-    border-bottom: 1px solid var(--accent);
-}
+/* ============================= */
+/* Responsive */
+/* ============================= */
 
 @media (max-width: 600px) {
     body {
@@ -184,5 +206,6 @@ footer a:hover {
     .project-item {
         flex-direction: column;
         gap: 4px;
+        align-items: flex-start;
     }
 }
