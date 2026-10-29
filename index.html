@@ -1,165 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emre Ergul | AR & Creative Developer</title>
-    <meta name="description"
-        content="Portfolio of Emre Ergul, AR Developer specializing in gamification and interactive experiences.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emre Ergül · AR / Creative Developer</title>
+<meta name="description" content="Emre Ergül is an AR / Creative Developer building interactive Snapchat Lenses, multiplayer lens games and Spectacles experiences, with 198M+ lens views.">
+<meta name="author" content="Emre Ergül">
+<link rel="canonical" href="https://emredevsalot.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Emre Ergül · AR / Creative Developer">
+<meta property="og:description" content="Emre Ergül is an AR / Creative Developer building interactive Snapchat Lenses, multiplayer lens games and Spectacles experiences, with 198M+ lens views.">
+<meta property="og:url" content="https://emredevsalot.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0b0d10">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=f1f8c4bcfc">
 </head>
-
 <body>
+<header class="wrap nav">
+  <nav class="nav-links"><a href="#work">Work</a><a href="#awards-sec">Recognition</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section class="wrap hero hero-name">
+    <div class="name-card nc-c">
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="menu-panel"><span></span><span></span><span></span></button>
+      <div class="menu-panel" id="menu-panel" hidden><a href="#work">Work</a><a href="#awards-sec">Recognition</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+      <div class="who"><span class="avatar" aria-hidden="true"><span class="emoji">👻</span></span><div><h1>Emre Ergül</h1><div class="label">AR / Creative Developer</div></div></div>
+      <hr class="nc-rule">
+      <p class="tagline">From idea to <span class="u">launch.</span></p>
+      <p class="lede">Interactive AR lenses built around game design and real-time play.</p>
+    </div>
+    <div id="stats"></div>
+  </section>
 
-    <header>
-        <h1>Emre Ergul</h1>
-        <p class="title">AR / Creative Developer</p>
-        <p class="location">Izmir, Turkiye</p>
+  <section class="wrap">
+    <div class="sec-head"><h2>Featured lenses</h2><span class="label"><span class="hover-hint">Click</span><span class="touch-hint">Tap</span> any project for details</span></div>
+    <div id="featured"></div>
+  </section>
+  <div class="brands-sec">
+    <span class="wrap label">Some of the brands we built lenses for at QReal</span>
+    <div id="brands"></div>
+  </div>
+  <section class="wrap" id="awards-sec">
+    <div class="sec-head"><h2>Recognition</h2><span class="label"><span data-bind="awards"></span> challenge recognitions<span class="hover-hint"> · hover to preview</span></span></div>
+    <ul id="awards"></ul>
+  </section>
 
-        <p class="contact">
-            <a href="mailto:emredevsalot@gmail.com">Email</a> ·
-            <a href="https://linkedin.com/in/emredevsalot" target="_blank">LinkedIn</a> ·
-            <a href="https://github.com/emredevsalot" target="_blank">GitHub</a> ·
-            <a href="/Emre_Ergul_Resume.pdf" target="_blank">Resume</a> ·
-            <a href="https://xrbazaar.com/emredevsalot" target="_blank">XR Bazaar</a>
-        </p>
+  <section class="wrap" id="work">
+    <div class="sec-head"><h2>All work</h2><span class="label"><span data-bind="total"></span> projects<span class="hover-hint"> · hover to preview</span></span></div>
+    <div id="filters"></div>
+    <div id="grid"></div>
+  </section>
 
-        <p class="stats">
-            80M+ Views · 800K+ Shares · 7 Lenslist Recognitions
-        </p>
+  <section class="wrap" id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="about-grid">
+      <div class="panel">
+        <p>I combine scripting, system design and gamification with concept development and user-centred thinking.</p>
+        <p>My own lenses have reached 198M views and 4.7M shares. Most recently I built 7 multiplayer Snapchat games in 3 weeks with AI-assisted development (two placed 2nd and 3rd in the Snap Multiplayer Game Challenge), 7 Web Lenses, and a set of Spectacles lenses built with Claude Code.</p>
+        <div id="skills"></div>
+      </div>
+      <div class="panel"><ul id="experience"></ul></div>
+    </div>
+  </section>
 
-        <p class="bio">
-            AR / Creative Developer building interactive experiences that combine scripting,
-            system design, and gamification with concept-driven, user-centered thinking.
-        </p>
-    </header>
-
-    <main>
-        <section id="ar-work">
-            <h2>Featured AR Experiences</h2>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=ab54939cdfa5439daa06d43199b2f48b"
-                    class="project-item" target="_blank">
-                    <span class="project-title">Avoid The Walls <span class="project-tag">70M+ Views</span></span>
-                    <span class="project-year">Top Performer</span>
-                </a>
-                <p class="project-desc"></p>
-            </div>
-
-            <div class="project-group">
-                <a href="https://lenslist.co/snap-ar-challenges/winter-sports" class="project-item" target="_blank">
-                    <span class="project-title">Yeti or Not!<span class="project-tag">2nd
-                            Place Award</span></span>
-                    <span class="project-year">Winter Sports Challenge</span>
-                </a>
-                <p class="project-desc"></p>
-            </div>
-
-            <div class="project-group">
-                <a href="https://lenslist.co/snap-ar-challenges/in-character" class="project-item" target="_blank">
-                    <span class="project-title">Connected Reality<span class="project-tag">3rd
-                            Place Award</span></span>
-                    <span class="project-year">In Character Challenge</span>
-                </a>
-                <p class="project-desc"></p>
-            </div>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/lens/b16cca190f46431eb0029a31c615757f?type=SNAPCODE"
-                    class="project-item" target="_blank">
-                    <span class="project-title">Carve a Pumpkin<span class="project-tag">Honorable
-                            Mention</span></span>
-                    <span class="project-year">Halloween Challenge</span>
-                </a>
-            </div>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/lens/caf2c35c93a84119a67e5ffef66c1f97?type=SNAPCODE"
-                    class="project-item" target="_blank">
-                    <span class="project-title">Mojigotchi<span class="project-tag">Honorable
-                            Mention</span></span>
-                    <span class="project-year">Throwback Challenge</span>
-                </a>
-            </div>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/lens/4831a49f0b3e4cdabb76ee9a83f71082?type=SNAPCODE"
-                    class="project-item" target="_blank">
-                    <span class="project-title">What The Telly?<span class="project-tag">Honorable
-                            Mention</span></span>
-                    <span class="project-year">Dual Camera Challenge</span>
-                </a>
-            </div>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/lens/22df888316ac47108ad4c28e0292b7ef?type=SNAPCODE"
-                    class="project-item" target="_blank">
-                    <span class="project-title">Friends In Space<span class="project-tag">Honorable
-                            Mention</span></span>
-                    <span class="project-year">Bitmoji Challenge</span>
-                </a>
-            </div>
-
-            <div class="project-group">
-                <a href="https://www.snapchat.com/lens/c5fad9d5d77845918d9ddb516e9ae416?type=SNAPCODE"
-                    class="project-item" target="_blank">
-                    <span class="project-title">Morning Routine<span class="project-tag">Honorable
-                            Mention</span></span>
-                    <span class="project-year">Make a Meme Challenge</span>
-                </a>
-            </div>
-        </section>
-
-        <section id="dev-work">
-            <h2>Indie Hacking & Frontend</h2>
-
-            <div class="project-group">
-                <a href="https://cowork-and-draw.vercel.app" class="project-item" target="_blank">
-                    <span class="project-title">Cowork and Draw<span class="project-tag">NextJS / PartyKit</span></span>
-
-                </a>
-                <p class="project-desc">A pomodoro app with collaboration and creativity.</p>
-            </div>
-
-            <div class="project-group">
-                <a href="https://emredevsalot.github.io/prompt-filler" class="project-item" target="_blank">
-                    <span class="project-title">Prompt Filler<span class="project-tag">React / AI Tools</span></span>
-
-                </a>
-                <p class="project-desc">Prompt Filler is a user-friendly app that simplifies the process of generating
-                    and completing prompts for LLMs, saving you time and effort in crafting engaging and effective
-                    prompts for various purposes.</p>
-            </div>
-
-            <div class="project-group">
-                <a href="https://emredevsalot.github.io/scene-struggle" class="project-item" target="_blank">
-                    <span class="project-title">Scene Struggle<span class="project-tag">Youtube API /
-                            Rapidapi</span></span>
-
-                </a>
-                <p class="project-desc">Scene Struggle allows you to play mini-games based on your favorite YouTube
-                    channels. It allowed me to explore the YouTube API and integrate it into a web application.</p>
-            </div>
-
-        </section>
-
-        <section id="stack">
-            <h2>Technical Stack</h2>
-            <p class="stack-list">
-                <strong>AR:</strong> Lens Studio, Scripting, Gamification<br>
-                <strong>Frontend:</strong> React, NextJS, TypeScript, Tailwind, Node.js, Three.js.<br>
-                <strong>Focus:</strong> AI-driven creative workflows & spatial interfaces.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Emre Ergul</p>
-    </footer>
-
+  <section class="wrap contact" id="contact">
+    <div class="contact-box">
+      <span class="label">Contact</span>
+      <h2><a href="mailto:emredevsalot@gmail.com">Let&#x27;s build something.</a></h2>
+      <div class="ctas"><a class="btn" href="mailto:emredevsalot@gmail.com">emredevsalot@gmail.com</a><a class="btn btn-ghost" href="https://www.linkedin.com/in/emredevsalot" target="_blank" rel="noopener">LinkedIn</a><a class="btn btn-ghost" href="https://github.com/emredevsalot" target="_blank" rel="noopener">GitHub</a><a class="btn btn-ghost" href="https://xrbazaar.com/emredevsalot" target="_blank" rel="noopener">XR Bazaar</a></div>
+    </div>
+  </section>
+</main>
+<footer class="wrap">Snapchat stats as of <span data-bind="asOf"></span> · © Emre Ergül</footer>
+<script src="data.js?v=f1f8c4bcfc"></script>
+<script src="app.js?v=f1f8c4bcfc"></script>
+<script src="page.js?v=f1f8c4bcfc"></script>
 </body>
-
 </html>
