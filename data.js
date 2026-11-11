@@ -30,10 +30,10 @@ window.SITE = {
  },
  "totals": {
   "lenses": 47,
-  "views": 198421202,
-  "plays": 158109107,
-  "shares": 4713559,
-  "asOf": "2026-10-28",
+  "views": 219056226,
+  "plays": 176773148,
+  "shares": 5537096,
+  "asOf": "2026-11-11",
   "awards": {
    "total": 13,
    "2nd_place": 2,
@@ -45,7 +45,8 @@ window.SITE = {
   "youtube": 15,
   "multiplayer": 7,
   "webLenses": 7,
-  "brands": "30+"
+  "brands": "30+",
+  "viewsPlusValue": 210000000
  },
  "brands": [
   "Nike",
@@ -360,8 +361,12 @@ window.SITE = {
     "touch-drawing",
     "game-logic"
    ],
-   "stats": null,
-   "showStats": false,
+   "stats": {
+    "plays": 1000623,
+    "shares": 12491,
+    "as_of": "2026-11-11"
+   },
+   "showStats": true,
    "link": "https://www.snapchat.com/lens/f73c0cd6a9bf4aa9a389eda2a8ec2846",
    "date": "2026-10-21",
    "featured": true,
@@ -706,9 +711,9 @@ window.SITE = {
     "face-mesh-deformation"
    ],
    "stats": {
-    "plays": 1210000,
-    "shares": 3972,
-    "as_of": "2026-10-28"
+    "plays": 1211136,
+    "shares": 3974,
+    "as_of": "2026-11-11"
    },
    "showStats": true,
    "link": "https://www.snapchat.com/lens/10114d7b3a73473eaeb6a2c95786ae7e",
@@ -863,9 +868,9 @@ window.SITE = {
     "chain-physics"
    ],
    "stats": {
-    "plays": 14780000,
-    "shares": 3643,
-    "as_of": "2026-10-28"
+    "plays": 14993721,
+    "shares": 3676,
+    "as_of": "2026-11-11"
    },
    "showStats": true,
    "link": "https://www.snapchat.com/lens/214722e1ad9546fcbdac310d150e5707",
@@ -1109,9 +1114,9 @@ window.SITE = {
     "3d-head"
    ],
    "stats": {
-    "plays": 64060000,
-    "shares": 3910000,
-    "as_of": "2026-10-28"
+    "plays": 73811298,
+    "shares": 4703711,
+    "as_of": "2026-11-11"
    },
    "showStats": true,
    "link": "https://www.snapchat.com/lens/b16cca190f46431eb0029a31c615757f",
@@ -1235,9 +1240,9 @@ window.SITE = {
     "pixel-shader"
    ],
    "stats": {
-    "plays": 2310000,
-    "shares": 14401,
-    "as_of": "2026-10-28"
+    "plays": 2315146,
+    "shares": 14423,
+    "as_of": "2026-11-11"
    },
    "showStats": true,
    "link": "https://www.snapchat.com/lens/caf2c35c93a84119a67e5ffef66c1f97",
@@ -1461,9 +1466,9 @@ window.SITE = {
     "game-logic"
    ],
    "stats": {
-    "plays": 73260000,
-    "shares": 763600,
-    "as_of": "2026-10-28"
+    "plays": 80739411,
+    "shares": 781415,
+    "as_of": "2026-11-11"
    },
    "showStats": true,
    "link": "https://www.snapchat.com/lens/ab54939cdfa5439daa06d43199b2f48b",

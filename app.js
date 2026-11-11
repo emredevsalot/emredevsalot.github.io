@@ -31,7 +31,7 @@
 
   // ---------- stats ----------
   const statList = [
-    { id: "views", value: fmt(S.totals.views) + "+", label: "lens views", note: `as of ${asOf}` },
+    { id: "views", value: fmt(S.totals.viewsPlusValue ?? S.totals.views) + "+", label: "lens views", note: `as of ${asOf}` },
     { id: "awards", value: S.totals.awards.total, label: "challenge awards", note: `${S.totals.awards["2nd_place"]}× 2nd · ${S.totals.awards["3rd_place"]}× 3rd` },
     { id: "lenses", value: S.totals.lenses, label: "own Snapchat Lenses", note: "since May 2024" },
     { id: "brands", value: S.totals.brands, label: "global brands", note: "lenses built with the QReal team" },
@@ -314,7 +314,7 @@
     const map = {
       views: fmt(S.totals.views), shares: fmt(S.totals.shares), plays: fmt(S.totals.plays),
       lenses: S.totals.lenses, asOf, awards: S.totals.awards.total, brands: S.totals.brands,
-      multiplayer: S.totals.multiplayer, webLenses: S.totals.webLenses, viewsPlus: fmt(S.totals.views) + "+", playsPlus: fmt(S.totals.plays) + "+",
+      multiplayer: S.totals.multiplayer, webLenses: S.totals.webLenses, viewsPlus: fmt(S.totals.viewsPlusValue ?? S.totals.views) + "+", playsPlus: fmt(S.totals.plays) + "+",
       specs: S.totals.specs, youtube: S.totals.youtube,
       total: S.items.length, email: S.profile.email,
     };
