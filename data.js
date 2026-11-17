@@ -35,10 +35,10 @@ window.SITE = {
   "shares": 5537096,
   "asOf": "2026-11-11",
   "awards": {
-   "total": 13,
-   "2nd_place": 2,
+   "total": 15,
+   "2nd_place": 3,
    "3rd_place": 2,
-   "honorable_mention": 9
+   "honorable_mention": 10
   },
   "clientLenses": 18,
   "specs": 5,
@@ -159,6 +159,20 @@ window.SITE = {
    "organizer": "YouTube (Effect Maker)",
    "url": null,
    "item": "floral-wheel"
+  },
+  {
+   "result": "2nd Place",
+   "challenge": "Web Lens Game Challenge",
+   "organizer": "Snap × Lenslist",
+   "url": null,
+   "item": "streak"
+  },
+  {
+   "result": "Honorable Mention",
+   "challenge": "Web Lens Game Challenge",
+   "organizer": "Snap × Lenslist",
+   "url": null,
+   "item": "doodle-toys"
   }
  ],
  "experience": [
@@ -217,7 +231,11 @@ window.SITE = {
    "date": "2026-10-26",
    "featured": true,
    "featuredOrder": 1,
-   "award": null,
+   "award": {
+    "result": "2nd Place",
+    "challenge": "Web Lens Game Challenge",
+    "organizer": "Snap × Lenslist"
+   },
    "media": {
     "poster": "media/streak/poster.jpg",
     "preview": "media/streak/preview.mp4",
@@ -371,7 +389,11 @@ window.SITE = {
    "date": "2026-10-21",
    "featured": true,
    "featuredOrder": 2,
-   "award": null,
+   "award": {
+    "result": "Honorable Mention",
+    "challenge": "Web Lens Game Challenge",
+    "organizer": "Snap × Lenslist"
+   },
    "media": {
     "poster": "media/doodle-toys/poster.jpg",
     "preview": "media/doodle-toys/preview.mp4",
